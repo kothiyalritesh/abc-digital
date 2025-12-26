@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our Our Work of successful marketing projects at RAgency">
+    <title>Our Work - RAgency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+     <header class="header" id="header">
+        <nav class="nav container">
+            <!-- Updated logo to ABC Digital -->
+            <a href="index.html" class="nav-logo">
+                <img src="image/abc-logo.png" alt="ABC Digital" class="logo-image">
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us </a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Our Services</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Our Work</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item nav-cta-mobile"><a href="contact.html" class="btn btn-primary btn-sm">Work With Us</a></li>
+            </ul>
+            
+            <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Work With Us</a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" role="banner">
+        <div class="container">
+            <h1 class="page-title">Our Work</h1>
+            <nav class="page-breadcrumb" aria-label="Breadcrumb navigation">
+                <a href="index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Our Work</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <main class="section" role="main">
+        <div class="container">
+            <div class="our-work-filters" role="tablist" aria-label="Portfolio filter options">
+                <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="portfolio-grid">All</button>
+                <button type="button" class="filter-btn" data-filter="digital" role="tab" aria-selected="false" aria-controls="portfolio-grid">Digital Marketing</button>
+                <button type="button" class="filter-btn" data-filter="branding" role="tab" aria-selected="false" aria-controls="portfolio-grid">Branding</button>
+                <button type="button" class="filter-btn" data-filter="web" role="tab" aria-selected="false" aria-controls="portfolio-grid">Web Development</button>
+            </div>
+            
+            <div class="our-work-grid" id="portfolio-grid" role="tabpanel" aria-label="Portfolio items">
+                <article class="our-work-item fade-in" data-category="digital" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=280&fit=crop" alt="E-Commerce Campaign project showcase" itemprop="image">
+                    <div class="our-work-overlay">
+                        <h3 itemprop="name">E-Commerce Campaign</h3>
+                        <p itemprop="genre">Digital Marketing</p>
+                    </div>
+                </article>
+                
+                <article class="our-work-item fade-in" data-category="branding" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=400&h=280&fit=crop" alt="Brand Development project showcase" itemprop="image">
+                    <div class="our-work-overlay">
+                        <h3 itemprop="name">Brand Development</h3>
+                        <p itemprop="genre">Branding</p>
+                    </div>
+                </article>
+                
+                <article class="our-work-item fade-in" data-category="digital" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=280&fit=crop" alt="Social Media Strategy project showcase" itemprop="image">
+                    <div class="our-work-overlay">
+                        <h3 itemprop="name">Social Media Strategy</h3>
+                        <p itemprop="genre">Digital Marketing</p>
+                    </div>
+                </article>
+                
+                <article class="our-work-item fade-in" data-category="web" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=280&fit=crop" alt="Website Redesign project showcase" itemprop="image">
+                    <div class="our-work-overlay">
+                        <h3 itemprop="name">Website Redesign</h3>
+                        <p itemprop="genre">Web Development</p>
+                    </div>
+                </article>
+                
+                <article class="our-work-item fade-in" data-category="digital" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&h=280&fit=crop" alt="SEO Campaign project showcase" itemprop="image">
+                    <div class="our-work-overlay">
+                        <h3 itemprop="name">SEO Campaign</h3>
+                        <p itemprop="genre">Digital Marketing</p>
+                    </div>
+                </article>
+                
+                <article class="our-work-item fade-in" data-category="branding" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?w=400&h=280&fit=crop" alt="Logo Design project showcase" itemprop="image">
+                    <div class="our-work-overlay">
+                        <h3 itemprop="name">Logo Design</h3>
+                        <p itemprop="genre">Branding</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: var(--secondary-color);" aria-labelledby="testimonials-heading">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title" id="testimonials-heading">What Clients Say</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <p class="section-subtitle">Testimonials from our satisfied clients</p>
+            </header>
+            
+            <div class="testimonials-grid" role="list" aria-label="Client testimonials">
+                <article class="testimonial-card fade-in" role="listitem" itemscope itemtype="https://schema.org/Review">
+                    <blockquote class="testimonial-text" itemprop="reviewBody">"RAgency transformed our online presence completely. Their strategic approach and creative solutions helped us achieve a 200% increase in leads."</blockquote>
+                    <footer class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Rajesh Kumar profile photo" itemprop="image">
+                        <div>
+                            <h4 itemprop="name">Rajesh Kumar</h4>
+                            <p itemprop="jobTitle">CEO, <span itemprop="worksFor">TechStart</span></p>
+                        </div>
+                    </footer>
+                </article>
+                
+                <article class="testimonial-card fade-in" role="listitem" itemscope itemtype="https://schema.org/Review">
+                    <blockquote class="testimonial-text" itemprop="reviewBody">"The team's dedication and expertise are unmatched. They delivered results beyond our expectations and continue to be a valuable partner."</blockquote>
+                    <footer class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face" alt="Priya Sharma profile photo" itemprop="image">
+                        <div>
+                            <h4 itemprop="name">Priya Sharma</h4>
+                            <p itemprop="jobTitle">Marketing Director, <span itemprop="worksFor">InnovateCo</span></p>
+                        </div>
+                    </footer>
+                </article>
+                
+                <article class="testimonial-card fade-in" role="listitem" itemscope itemtype="https://schema.org/Review">
+                    <blockquote class="testimonial-text" itemprop="reviewBody">"Working with RAgency has been a game-changer for our business. Their ROI-focused approach ensures every penny is well spent."</blockquote>
+                    <footer class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="Amit Patel profile photo" itemprop="image">
+                        <div>
+                            <h4 itemprop="name">Amit Patel</h4>
+                            <p itemprop="jobTitle">Founder, <span itemprop="worksFor">GrowthHub</span></p>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" role="complementary" aria-labelledby="cta-heading">
+        <div class="container">
+            <h2 id="cta-heading">Ready to Start Your Project?</h2>
+            <p>Let's create something amazing together</p>
+            <a href="contact.html" class="btn btn-primary" role="button" aria-describedby="cta-heading">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
